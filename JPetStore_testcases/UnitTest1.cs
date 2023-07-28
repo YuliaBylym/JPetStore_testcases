@@ -62,6 +62,25 @@ namespace JPetStore_testcases
 
         }
         [Test]
+        public void AccountDataChange()
+        {
+            WelcomePageObject reg = new WelcomePageObject(_webDriver);
+            reg
+                .EnterShop()
+                .SignInButton()
+                .LoginFill(TestData.Login, TestData.Password)
+                .LoginSuccess()
+                .ToAccountPage()
+                .ChangeAccountInfo(TestData.UserFirstName, TestData.UserLastName)
+                .SaveNewAccountInfo()
+                .ToMainMenu()
+                .ToAccountPage();
+
+            Assert.True(CheckAnything(TestData.UserFirstName));
+            Assert.True(CheckAnything(TestData.UserLastName));
+        }
+        
+        [Test]
         public void CheckoutProduct()
         {
             WelcomePageObject checkout = new WelcomePageObject(_webDriver);
