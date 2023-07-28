@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\TestData.cs" />
+    <Compile Include="Locators\AccountPageLocators.cs" />
     <Compile Include="Locators\CartPageLocators.cs" />
     <Compile Include="Locators\CatProductLocators.cs" />
     <Compile Include="Locators\CatsProductPageLocators.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Locators\RegistrationLocators.cs" />
     <Compile Include="Locators\SearchLocators.cs" />
     <Compile Include="Locators\WelcomePageLocators.cs" />
+    <Compile Include="PageObject\AccountPageObject.cs" />
     <Compile Include="PageObject\CartPageObject.cs" />
     <Compile Include="PageObject\CatProductPageObject.cs" />
     <Compile Include="PageObject\CatsProductPageObject.cs" />

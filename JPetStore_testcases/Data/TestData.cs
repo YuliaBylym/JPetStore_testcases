@@ -16,7 +16,9 @@
         public static string RandomUserId { get; set; } = Faker.RandomNumber.Next(1, 99999).ToString();
         public static string RandomPassword { get; set; } = Faker.Internet.UserName();
         public static string FirstName { get; set; } = Faker.Name.First();
+        public static string UserFirstName { get; set; } = "Yumiiii";
         public static string LastName { get; set; } = Faker.Name.Last();
+        public static string UserLastName { get; set; } = "Kim";
         public static string Email { get; set; } = Faker.Internet.Email();
         public static string Phone { get; set; } = Faker.Phone.Number();
         public static string Address { get; set; } = Faker.Address.StreetAddress();

@@ -20,6 +20,11 @@ namespace JPetStore_testcases.PageObject
             _webDriver.FindElement(MainMenuLocators._signOutButton).Click();
             return new LoginMenuPageObject(_webDriver);
         }
+        public AccountPageObject ToAccountPage()
+        {
+            _webDriver.FindElement(MainMenuLocators._accountButton).Click();
+            return new AccountPageObject(_webDriver);
+        }
         public CatsProductPageObject GoToCats()
         {
             _webDriver.FindElement(MainMenuLocators._Cats).Click();
