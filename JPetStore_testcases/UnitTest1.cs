@@ -34,6 +34,19 @@ namespace JPetStore_testcases
             Assert.True(CheckAnything(TestData.LoginSuccess));
         }
         [Test]
+        public void SignOut()
+        {
+            WelcomePageObject login = new WelcomePageObject(_webDriver);
+            login
+                .EnterShop()
+                .SignInButton()
+                .LoginFill(TestData.Login, TestData.Password)
+                .LoginSuccess()
+                .SignOutButton();
+
+            Assert.True(CheckAnything(TestData.SignOutSuccess));
+        }
+        [Test]
         public void Registration()
         {
             WelcomePageObject reg = new WelcomePageObject(_webDriver);
