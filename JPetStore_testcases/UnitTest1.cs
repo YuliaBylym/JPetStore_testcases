@@ -160,7 +160,7 @@ namespace JPetStore_testcases
                 .SearchSuccess();
         }
 
-       // [TearDown]
+        [TearDown]
         public void EndTest()
         {
             if (CheckAnything(TestData.LoginSuccess) == true)
