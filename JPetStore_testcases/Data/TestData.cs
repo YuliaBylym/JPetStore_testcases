@@ -6,6 +6,7 @@
         public static string Password { get; set; } = "Pa$$w0rd!";
         public static string IncorrectPassword { get; set; } = "qwerty123!!";
         public static string LoginSuccess { get; set; } = "Sign Out";
+        public static string SignOutSuccess { get; set; } = "Sign In";
         public static string RegisterSuccess { get; set; } = "Sign In";
         public static string CheckoutSuccess { get; set; } = "Thank you, your order has been submitted";
         public static string ErrorFailedLogin { get; set; } = "Signon failed.";
